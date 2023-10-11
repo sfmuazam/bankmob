@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".EditProfileActivity">
+
+    <EditText
+        android:id="@+id/newNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Baru"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/newEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Baru"
+        android:layout_below="@id/newNameEditText"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/newAccountEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No. Rekening Baru"
+        android:layout_below="@id/newEmailEditText"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/newPhoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No. HP Baru"
+        android:layout_below="@id/newAccountEditText"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_below="@id/newPhoneEditText"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_below="@id/saveButton"/>
+
+
+</RelativeLayout>
