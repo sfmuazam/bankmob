@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
                 String password = passwordEditText.getText().toString();
 
                 // Kode validasi login disini (contoh sederhana)
-                if (username.equals("pengguna") && password.equals("password")) {
+                if (username.equals("user") && password.equals("1234")) {
                     Intent intent = new Intent(LoginActivity.this, DashboardActivity.class);
                     startActivity(intent);
                 } else {

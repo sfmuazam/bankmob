@@ -49,9 +49,6 @@ public class EditProfileActivity extends AppCompatActivity {
                 String newAccount = newAccountEditText.getText().toString();
                 String newPhone = newPhoneEditText.getText().toString();
 
-                // Simpan data ke penyimpanan atau server (misalnya, Firebase Realtime Database)
-                // Pastikan Anda telah mengganti ini dengan kode sesuai dengan penyimpanan yang digunakan
-
                 // Kembali ke DashboardActivity setelah menyimpan
                 Intent intent = new Intent();
                 // Kirim data profil yang telah diperbarui
@@ -67,7 +64,6 @@ public class EditProfileActivity extends AppCompatActivity {
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Lakukan proses logout di sini (misalnya, bersihkan sesi atau hapus data login)
                 // Setelah logout, arahkan pengguna ke halaman login
                 Intent intent = new Intent(EditProfileActivity.this, LoginActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
